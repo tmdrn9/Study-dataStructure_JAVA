@@ -1,7 +1,7 @@
 import java.util.*;
 public class ArrList<E> {
 	private E a[];
-	private int size;// À¯È¿ÇÑ µ¥ÀÌÅÍÀÇ ¼ö
+	private int size;// ìœ íš¨í•œ ë°ì´í„°ì˜ ìˆ˜
 	public ArrList() {
 		a=(E[])new Object[1];
 		size=0;
