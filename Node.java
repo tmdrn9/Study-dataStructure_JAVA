@@ -1,22 +1,17 @@
 
-public class Node<E> {
-	private E item;
-	private Node<E> next;
-	public Node(E newItem, Node<E> node) {
+public class Node<Key extends Comparable<Key>> {
+	private Key item;
+	private Node<Key> left;
+	private Node<Key> right;
+	public Node(Key newItem,Node ln,Node rn) {
 		item=newItem;
-		next=node;
+		left=ln;
+		right=rn;
 	}
-	public E getItem() {
-		return item;
-	}
-	public Node<E> getNext(){
-		return next;
-	}
-	public void setItem(E newItem) {
-		item=newItem;
-	}
-	public void setNext(Node<E> node) {
-		next=node;
-	}
-	
+	public Key getKey() {return item;}
+	public Node<Key> getLeft(){return left;}
+	public Node<Key> getRight(){return right;}
+	public void setKey(Key newKey) {item=newKey;}
+	public void setLeft(Node<Key> ln) {left=ln;}
+	public void setRight(Node<Key> rn) {right=rn;}
 }
